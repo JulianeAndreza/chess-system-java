@@ -16,7 +16,7 @@ public abstract class Piece {
 
     public abstract boolean[][] possibleMoves();
 
-    public boolean PossibleMoves(Position position) {
+    public boolean PossibleMove(Position position) {
         return possibleMoves()[position.getRow()][position.getColumn()];
         //concreto - chama implementação de subclasse concreta
     }
