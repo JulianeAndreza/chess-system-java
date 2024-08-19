@@ -23,7 +23,7 @@ public class Program {
 
 
         //true repete indefinidamente
-        while (true) {
+        while (!chessMatch.getCheckMate()) {
             try {
             UI.clearScreen();
 
@@ -56,6 +56,8 @@ public class Program {
                 scanner.nextLine();
             }
         }
+        UI.clearScreen();
+        UI.printMatch(chessMatch, captured);
     }
 
 
